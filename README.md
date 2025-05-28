@@ -4,14 +4,22 @@ This is a lightweight Plagiarism Detection Tool implemented in C, designed to co
 
 How It Works
 Reads each input file and tokenizes the text into words or adjustable-sized n-grams.
+
 Applies a custom hash function that uses bitwise operations (such as shifting bits left by 5) to convert tokens into hash values.
+
 Stores these hashes in a hash table to track occurrences across documents.
+
 Compares documents by counting the number of shared hashes, calculating a similarity score based on overlapping content.
+
 Outputs similarity scores that help identify potential plagiarism or content reuse.
 
 Features
 Fast and lightweight file comparison using a custom bit-shift based hashing method.
+
 Adjustable n-gram size for fine-tuning similarity detection.
+
 Simple command-line interface.
+
 Outputs clear similarity scores between pairs of files.
+
 Scales to multiple files efficiently.
